@@ -3,6 +3,8 @@ let store = { drivers: [], passengers: [], trips: [] };
 let driverId = 0;
 
 class Driver {
+	// has many trips
+	// has many passengers through trips
 
 	constructor(name) {
 		this.id = ++driverId;
@@ -27,6 +29,8 @@ class Driver {
 let passengerId = 0;
 
 class Passenger {
+	// has many trips
+	// has many drivers through trips
 
 	constructor(name) {
 		this.id = ++passengerId;
@@ -57,6 +61,8 @@ class Passenger {
 let tripId = 0
 
 class Trip {
+	// belongs to driver
+	// belongs to passenger
 
 	constructor(driver = undefined, passenger = undefined) {
 		this.id = ++tripId;
