@@ -170,6 +170,7 @@ describe('relating a driver to a trip and a passenger', function() {
     })
 
     it('has drivers', function() {
+      // console.log(passenger.drivers())
       expect(passenger.drivers()).to.include(driver)
     })
   })
