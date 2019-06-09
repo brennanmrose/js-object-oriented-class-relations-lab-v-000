@@ -45,10 +45,6 @@ class Passenger {
 		})
 	}
 
-	setTrip(trip) {
-		this.tripId = trip.id;
-	}
-
 	trips() {
 		return store.trips.filter(
 			function(trip) {
@@ -75,10 +71,6 @@ class Trip {
 		}
 
 		store.trips.push(this);
-	}
-
-	setDriver(driver) {
-		this.driverId = driver.id;
 	}
 
 	driver() {
